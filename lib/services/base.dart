@@ -1,5 +1,5 @@
 import 'dart:convert';
-import 'package:flutter/material.dart';
+// import 'package:flutter/material.dart';
 import 'package:http/http.dart' as http;
 
 class NetworkHelper {
@@ -11,7 +11,7 @@ class NetworkHelper {
     "Content-type": "application/x-www-form-urlencoded"
   };
 
-  Future getData(BuildContext context) async {
+  Future getData() async {
     http.Response response = await http.get(url);
 
     if (response.statusCode == 200) {
